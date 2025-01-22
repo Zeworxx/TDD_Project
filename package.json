@@ -4,8 +4,8 @@
   "description": "TDD Project",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/main.js",
-    "dev": "tsc --watch",
+    "build": "tsc",
+    "start": "npm run build && node dist/src/main.js",
     "test": "jest",
     "test:watch": "jest --watch"
   },
